@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Angga Kurnia | 05TPLE004" />
+    <meta name="description" content="Tugas Pertemuan 2 Pemrograman Web 1" />
     <title>Angga Kurnia</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="shortcut icon" href="./assets/foto.jpg" type="image/x-icon" />
+  </head>
+  <body id="home">
     <header>
-        <div>
-            <div><a href="">Angga Kurnia</a></div>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Project</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
+      <div class="icon">
+        <img src="./assets/foto.jpg" class="image-brand" alt="" />
+        <h1>Angga Kurnia</h1>
+        <h4>Mahasiswa Teknik Informatika</h4>
+        <h3><a href="https://unpam.ac.id/">Universitas Pamulang</a></h3>
+      </div>
+      <img class="wave" src="./assets/wave.png" alt="" />
     </header>
-</body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <h1><mark>About Me</mark></h1>
+      <p class="content">
+        Hi✋, saya
+        <span class="name">Angga Kurnia.</span> Mahasiswa aktif di
+        <a href="https://unpam.ac.id/">Universitas Pamulang</a> jurusan
+        <a href="https://informatika.unpam.ac.id/">Teknik Informatika</a>.
+        Memiliki minat yang tinggi pada bidang IT, seperti Web Developer dan
+        Data Science. Terampil dalam kolaborasi antar tim, pemecahan masalah,
+        dan manajemen proyek.
+      </p>
+    </section>
+    <hr size="3" width="70%" />
+    <section id="skills">
+      <h1><mark>Skills</mark></h1>
+      <div class="content">
+        <ul>
+          <li>Microsoft Office</li>
+          <li>HTML, CSS, Javascript</li>
+          <li>PHP, JAVA, C++, NODE JS</li>
+          <li>Laravel, Hapi Js</li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <hr size="3" width="70%" />
+    <section id="contact">
+      <h1><mark>Contact</mark></h1>
+      <div class="card">
+        <form action="">
+          <div class="m-3">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div class="m-3">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="m-3 pesan">
+            <label for="pesan">Pesan</label>
+            <textarea
+              name="pesan"
+              id="pesan"
+              cols="25"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="m-3">
+            <button type="submit" class="btn-submit">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="sosmed">
+        <ul class="icon">
+          <li><a href="https://www.instagram.com/angkrnia/">Instagram</a></li>
+          <li><a href="https://web.facebook.com/angga.9980">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/angkrnia">LinkedIn</a></li>
+          <li><a href="mailto:anggakurnia712@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <p>Angga Kurnia</p>
+    </footer>
+  </body>
 </html>
