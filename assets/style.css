@@ -1,0 +1,161 @@
+:root {
+	--slate: #434f5f;
+	--primary: #2948af;
+	--white: #fff;
+	--bg: #b7d1ee;
+	--myFont: 'Ubuntu', sans-serif;
+	--pl: 1.1rem;
+	--fs:1.2rem;
+}
+
+body {
+	background-color: var(--bg);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: var(--myFont);
+	text-decoration: none;
+	list-style-type: none;
+	scroll-behavior: smooth;
+}
+header{
+	height:100vh;
+	position: relative;
+}
+header .icon{
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color:var(--slate);
+}
+header .wave{
+	max-width: 100%;
+	position: absolute;
+	bottom: -1px;
+	z-index: 2;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem 0;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	list-style-type: none;
+	padding: 0px var(--pl);
+	padding-right: 80px;
+	border-right: 2px solid var(--primary);
+}
+nav {
+	position: sticky;
+	top: 0;
+	background-color: var(--primary);
+	color: var(--white);
+	box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+main p {
+	padding: 1.5rem var(--pl);
+}
+nav a{
+	color: #e4bdbd;
+}
+nav a:hover{
+	color: var(--white);
+	text-decoration: underline;
+}
+.image-brand{
+	max-width: 10rem;
+	border-radius: 50%;
+	padding: var(--pl);
+}
+#about,#skills,#contact{
+	text-align: center;
+	padding: 6rem var(--fs);
+}
+.content {
+	margin: auto;
+	width: 60%;
+	padding: 2rem;
+	font-size: var(--fs);
+	line-height: 1.5rem;
+	color: var(--slate);
+}
+#about .name{
+	font-weight: 600;
+}
+.card{
+	margin: 2rem auto;
+	max-width: 30rem;
+	padding: var(--pl);
+	color: var(--slate);
+	background-color: #afa3a3;
+	border-radius: 8px;
+}
+.m-3{
+	margin: 1.3rem 0;
+}
+.pesan{
+	display: flex;
+	justify-content: center	;
+	align-items: center;
+}
+input[type='text'],input[type='email']{
+	height: 1.3rem;
+	padding: 3px 8px;
+	font-size: 1.3rem;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	color: var(--slate);
+	margin-left: 8px;
+}
+input[type='text']:focus,
+input[type='email']:focus,textarea:focus{
+	outline: 2px solid var(--primary);
+}
+textarea{
+	padding: 3px 8px;
+	margin-left: 8px;
+	font-size: 1.3rem;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	color: var(--slate);
+}
+.btn-submit{
+	padding: 8px 24px;
+	border-radius: 8px;
+	border: none;
+	font-size: var(--pl);
+	color: var(--slate);
+	cursor: pointer;
+}
+hr{
+	margin: auto;
+}
+footer {
+	padding: var(--pl);
+	background-color: var(--slate);
+	color: var(--white);
+	text-align: center;
+}
+footer .sosmed{
+	width: 30%;
+	margin: auto;
+}
+footer .icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 1.3rem;
+}
+footer a{
+	color: var(--white);
+	text-decoration: underline;
+}
