@@ -136,6 +136,9 @@ textarea{
 	color: var(--slate);
 	cursor: pointer;
 }
+.btn-submit:focus{
+	outline: 2px solid var(--primary);
+}
 hr{
 	margin: auto;
 }
